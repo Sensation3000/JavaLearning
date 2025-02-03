@@ -68,5 +68,8 @@ public class Lesson2 {
 
         int a1 = 100;
         System.out.println((char) a1);  //напечатает символ d  т.к мы перевели значение переменной типа int в char
+
+        System.out.println(5/11);//0
+        System.out.println(5%11);//5
     }
 }
