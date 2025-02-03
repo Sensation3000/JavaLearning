@@ -11,25 +11,45 @@ public class Lesson2 {
 
         int regular = 30;
         int doppel = 10;
+        int archers = 15;
         int leut = 1;
         int captain = 1;
 
         int baseSalary = 7;
 
         int summa = regular * baseSalary
-                + doppel * baseSalary * 2
+                + (doppel + archers) * baseSalary * 2
                 + leut * baseSalary * 10
                 + captain * baseSalary * 100;
 
         System.out.println(summa);
 
         int regMoney = regular * baseSalary;
-        int doppelMoney = doppel * baseSalary * 2;
+        int doppelMoney = (doppel + archers) * baseSalary * 2;
         int leutMoney = leut * baseSalary * 10;
         int captainMoney = captain * baseSalary * 100;
 
         int summa2 = regMoney + doppelMoney + leutMoney + captainMoney;
         System.out.println(summa2);
+        System.out.println("=====================================");
+
+        long b = 10L; //long
+        float a = 10F; //float, тип данных float можно положить в переменную типа double, но не наоборот
+        double c = 10.0; //double
+
+        int oranges = 11;
+        //double half = oranges / 2;  // если с обеих сторон целочисленные числа, то и деление целочисленное
+        //даже если результат кладем в double
+        double half = oranges / 2.0;
+        double testTesult = half * 2;
+
+        System.out.println(half);
+        System.out.println(testTesult);
+
+        int oranges2 = 11;
+        int half2 = oranges2 / 2;
+        int remainder = oranges2 % 2; //остаток от целочисленного деления
+        System.out.println(remainder);
 
 
 
