@@ -26,7 +26,6 @@ public class homework4_2 {
             System.out.println(res);
         }
 
-
 //        3 вариант
         int num = 5;
         for (int i = 1; i < 100000; i *= num) {

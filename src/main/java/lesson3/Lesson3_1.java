@@ -1,17 +1,7 @@
 package lesson3;
 
-public class Lesson3 {
+public class Lesson3_1 {
     public static void main(String[] args) {
-        int x = 1;
-        int y = 2;
-        boolean res = x == y; //строгое сравнение
-        //>= больше или равно
-        //<= меньше или равно
-
-        //приоритет операторов - умножение первое, сложение второе.
-        //у операторов сравнения наименьший приоритет
-        System.out.println(res);
-
 
         int baseSalary = 1000;
         int h1 = 65;
@@ -31,6 +21,5 @@ public class Lesson3 {
             //блок else опциональный
             System.out.println("ЗП соответствует требованиям, итого " + payment);
         }
-
     }
 }
