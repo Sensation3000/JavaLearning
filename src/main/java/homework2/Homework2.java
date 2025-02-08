@@ -78,7 +78,7 @@ public class Homework2 {
         System.out.println("ship owner gets " + shipOwner);
         System.out.println("jack sparrow gets " + (captain + regularPirate));
         System.out.println("regular pirate gets " + regularPirate);
-        System.out.println("Captain Kack Sparrow gets " + captain + shipOwner);
+        System.out.println("Captain Kack Sparrow gets " + (captain + shipOwner));
         System.out.println(shipOwner + captain + regularPirate * 15);
 
         if (shipOwner + captain + (regularPirate * 15) == (int) Math.round(treasure)){
@@ -109,7 +109,7 @@ public class Homework2 {
         System.out.println("ownerShare is " + ownerShare);
         System.out.println("captainShare is " + captainShare);
         System.out.println("eachRegularPirate gets " + eachRegularPirate);
-        System.out.println("Captain Kack Sparrow gets " + captainShare + ownerShare);
+        System.out.println("Captain Kack Sparrow gets " + (captainShare + ownerShare));
         System.out.println("remainder " + remaider);
 
         System.out.println("The sharing is ");
