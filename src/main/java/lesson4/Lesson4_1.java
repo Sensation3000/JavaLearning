@@ -44,7 +44,5 @@ public class Lesson4_1 {
                 System.out.println("Use duct tape!");
             }
         }
-
-
     }
 }
