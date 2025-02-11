@@ -14,4 +14,8 @@
   - [about debugging](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson03/Lesson3_3.java)
   - [homework 3](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework03)
 * Lesson 4 - Loops 
+  - [if else](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson04/Lesson4_1.java)
+  - [while](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson04/Lesson4_2.java)
+  - [do while](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson04/Lesson4_3.java)
+  - [for](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson04/Lesson4_4.java)
  
