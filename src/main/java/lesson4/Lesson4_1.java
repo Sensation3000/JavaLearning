@@ -7,14 +7,14 @@ public class Lesson4_1 {
 
         //1 вариант
         //все понятно,но есть повторяющийся код
-        if (itMoves){
-            if(itShouldMove){
+        if (itMoves) {
+            if (itShouldMove) {
                 System.out.println("No Problem");
             } else {
                 System.out.println("Use duct tape!");
             }
         } else {
-            if (itShouldMove){
+            if (itShouldMove) {
                 System.out.println("Use WD-40!");
             } else {
                 System.out.println("No problem!");
@@ -23,7 +23,7 @@ public class Lesson4_1 {
 
         //2 вариант
         // c использованием операторов or и and
-        if ((itMoves && itShouldMove) || (!itMoves && !itShouldMove)){
+        if ((itMoves && itShouldMove) || (!itMoves && !itShouldMove)) {
             System.out.println("No problem!");
         } else {
             if (!itMoves) {
@@ -33,16 +33,23 @@ public class Lesson4_1 {
             }
         }
 
+        //еще упрощаем, добавляя else if
+        if ((itMoves && itShouldMove) || (!itMoves && !itShouldMove)) {
+            System.out.println("No problem!");
+        } else if (!itMoves) {
+            System.out.println("Use WD-40!");
+        } else {
+            System.out.println("Use duct tape!");
+        }
+
         //3 вариант
         // еще больше упрощаем
-        if ((itMoves == itShouldMove)){
+        if ((itMoves == itShouldMove)) {
             System.out.println("No problem!");
+        } else if (!itMoves) {
+            System.out.println("Use WD-40!");
         } else {
-            if (!itMoves) {
-                System.out.println("Use WD-40!");
-            } else {
-                System.out.println("Use duct tape!");
-            }
+            System.out.println("Use duct tape!");
         }
     }
 }
