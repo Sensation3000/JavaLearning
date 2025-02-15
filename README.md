@@ -6,7 +6,7 @@
   - [homework 1](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework01)
 * Lesson 2 - Variables, numeric datatypes
   - [variables](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson02/Lesson2.java)
-  - [readInt() method](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson2/Adder.java)
+  - [readInt() method](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson02/Adder.java)
   - [homework 2](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework02)
 * Lesson 3 - Boolean and if
   - [if / else statements](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson03/Lesson3_1.java)
