@@ -9,6 +9,7 @@ public class Lesson4_3 {
     public static void main(String[] args) {
 
         // цикл do while
+        //первый раз будет исполнен всегда, далее в зависимости от условия
         int summa;
         do {
             int kubik1 = random.nextInt(6) + 1;
