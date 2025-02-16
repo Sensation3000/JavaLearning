@@ -31,5 +31,31 @@ public class homework4_2 {
         for (int i = 1; i < 100000; i *= num) {
             System.out.println(i);
         }
+
+//       4 вариант. Преподавательский
+//        в цикле for
+        int limit = 100000;
+        int base = 5;
+        for (int result2 = 1, power = 0; result2 < limit; result2 *= base) {
+            System.out.println(base + "^" + power + "=" + result2);
+            power++;
+        }
+
+//        тоже самое в цикле do while
+//        int result2 = 1, power = 0;
+//        do {
+//         System.out.println(base + "^" + power + "=" + result2);
+//             power++;
+//         result2*= base;
+//          } while (result2 < limit);
+
+
+//        тоже самое в цикле while
+//         int result2 = 1, power = 0;
+//         while (result2 < limit){
+//           System.out.println(base + "^" + power + "=" + result2);
+//           power++;
+//           result2*= base;
+//         }
+        }
     }
-}
