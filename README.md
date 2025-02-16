@@ -26,3 +26,9 @@
   - [string](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson05/Lesson5_3.java)
   - [string's methods](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson05/Lesson5_4.java)
   - [homework 5](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework05)
+* Lesson 6 - Looping through arrays
+  - [clone arrays](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson06/Lesson6_1.java)
+  - [methods and string comparison](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson06/Lesson6_2.java)
+  - []()
+  - []()
+  - []()
