@@ -10,7 +10,7 @@ public class Lesson6_4 {
         String[] result = new String[months.length];
         //создаем новый массив с длинной как у прежнего массива
 
-        int [] lengthen = new int [months.length];
+        int[] lengthen = new int[months.length];
 
         for (int i = 0; i < months.length; i++) {
             result[months.length - i - 1] = months[i].toUpperCase();
@@ -25,9 +25,11 @@ public class Lesson6_4 {
         //вывести все элементы заканчивающиеся на мягкий знак
         for (int i = 0; i < months.length; i++) {
             String month = months[i];
-            if (month.endsWith("ь")){
-                System.out.println(months);
+            if (month.endsWith("ь") && month.length() > 5) {
+                System.out.println(month);
+                months[i] = month.toUpperCase();
             }
         }
+        System.out.println(Arrays.toString(months));
     }
 }
