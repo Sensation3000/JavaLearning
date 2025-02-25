@@ -9,12 +9,22 @@ public class Homework6_2 {
 //        Для указанной строки ответ будет 4.
         String s = "Перевыборы выбранного президента";
 
+        //1 вариант
         int counter = 0;
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == 'е'){
-                counter ++;
+            if (s.charAt(i) == 'е') {
+                counter++;
             }
         }
         System.out.println(counter);
+
+        //2 вариант
+        int counter2 = 0;
+        for (char c : s.toCharArray()) {
+            if (c == 'е') {
+                counter2++;
+            }
+        }
+        System.out.println(counter2);
     }
 }
