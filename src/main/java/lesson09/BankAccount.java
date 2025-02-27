@@ -14,6 +14,7 @@ public class BankAccount {
     //если у приватного полясеттера нет, изменить значение поля нельзя
 
     // конструктор - специальный метод, который отрабатывает единственный раз в момент создания экземпляра класса
+    // может принимать любые параметры, а не только названия полей
 
     // дефолтный конструктор - есть у каждого класса, у него нет параметр
     // public BankAccount (){} //так он выглядит если специально его написать.
@@ -108,12 +109,16 @@ public class BankAccount {
     }
 
     //factory method - статические - создание нового экземляра
-    public static BankAccount withDefoultOverDraft(String accountNo, int balance) {
+    public static BankAccount withDefaultOverDraft(String accountNo, int balance) {
         return new BankAccount(accountNo, balance, 0);
     }
 
     //factory method - статические - создание нового экземляра
-    public static BankAccount withDefoultBalance(String accountNo, int maxOverDraft) {
+    public static BankAccount withDefaultBalance(String accountNo, int maxOverDraft) {
         return new BankAccount(accountNo, 0, maxOverDraft);
+
+     // статические методы не принадлежат никакому объекту, они принадлежат к самому классу
+     // соответственно не имеют доступа к полям экземляра
+     // не зависят от внутреннего состояния какого либо экземпляра класса
     }
 }
