@@ -15,6 +15,9 @@ package homework08;
 //Необходимо создать класс Manager с полями: имя, возраст, пол, ЗП в день и количество подчиненных. Класс должен иметь метод - getSalary(Month[] monthArray), метод возвращает зарплату за те месяцы которые были переданы в качестве аргумента.
 //К рассчитанной ЗП должно прибавляться по 1% за каждого подчиненного.
 
+import static homework08.MonthUtils.february;
+import static homework08.MonthUtils.january;
+
 public class Main {
     public static void main(String[] args) {
         Employee employee1 = new Employee();
@@ -23,7 +26,7 @@ public class Main {
         employee1.salaryInDay = 1800.00;
         employee1.sex = 'm';
 
-        System.out.println(employee1.getSalary(MonthUtils.monthArray));
+        System.out.println(employee1.getSalary(new Month[]{january, february}));
 
         Manager manager1 = new Manager();
         manager1.age = 18;
@@ -32,6 +35,6 @@ public class Main {
         manager1.sex = 'm';
         manager1.numberOfSubordinates = 4;
 
-        System.out.println(manager1.getSalary(MonthUtils.monthArray));
+        System.out.println(manager1.getSalary(new Month[]{january, february}));
     }
 }
