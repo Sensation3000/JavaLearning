@@ -1,6 +1,5 @@
 package homework08;
 
-
 public class MonthUtils {
     static Month january = makeMonth("January", 31, 23);
     static Month february = makeMonth("February", 28, 20);
@@ -23,4 +22,16 @@ public class MonthUtils {
         month.numberOfWorkDays = numberOfWorkDays;
         return month;
     }
+
+/*
+    other way (when there is yet no knowledge about constructors or factory method
+    public static Month getJanuary () {
+        Month january = new Month();
+        january.monthName = "January";
+        january.numberOfWorkDays = 31;
+        january.numberOfDays = 23;
+        return january;
+    }
+*/
+
 }
