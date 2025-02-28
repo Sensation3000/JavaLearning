@@ -9,8 +9,8 @@ public class Employee {
 
     public double getSalary(Month[] monthArray){
         double salary = 0.0;
-        for (int i = 0; i < monthArray.length; i++) {
-          salary = salary + (salaryInDay * monthArray[i].numberOfWorkDays);
+        for (Month month : monthArray) {
+            salary = salary + (salaryInDay * month.numberOfWorkDays);
         }
         return salary;
     }
