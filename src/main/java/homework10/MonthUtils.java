@@ -1,7 +1,5 @@
 package homework10;
 
-import homework10.Month;
-
 public class MonthUtils {
     static Month january = new Month("January", 31, 23);
     static Month february = new Month("February", 28, 20);
