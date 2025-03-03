@@ -32,11 +32,11 @@ public class Employee {
     }
 
     public double getSalary(Month[] monthArray) {
-        double salary = 0.0;
+        double baseSalary = 0.0;
         for (Month month : monthArray) {
-            salary = salary + (salaryInDay * month.getNumberOfWorkDays());
+            baseSalary = baseSalary + (salaryInDay * month.getNumberOfWorkDays());
         }
-        return salary;
+        return baseSalary;
     }
 
     public String printSalary(Month[] monthArray) {

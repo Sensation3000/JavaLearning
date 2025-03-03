@@ -14,11 +14,11 @@ public class Manager extends Employee {
 
     @Override
     public double getSalary(Month[] monthArray){
-        double salary = 0.0;
+        double baseSalary = 0.0;
         for (Month month : monthArray)  {
-            salary = salary + (getSalaryInDay() * month.getNumberOfWorkDays());
+            baseSalary = baseSalary + (getSalaryInDay() * month.getNumberOfWorkDays());
         }
-        return salary + salary * 0.01 * numberOfSubordinates;
+        return baseSalary + baseSalary * 0.01 * numberOfSubordinates;
     }
 
     @Override

@@ -1,17 +1,18 @@
 package homework10;
 
 public class Director extends Manager {
+
     public Director(String name, double salaryInDay, int numberOfSubordinates) {
         super(name, salaryInDay, numberOfSubordinates);
     }
 
     @Override
     public double getSalary(Month[] monthArray) {
-        double salary = 0.0;
+        double baseSalary = 0.0;
         for (Month month : monthArray) {
-            salary = salary + (getSalaryInDay() * month.getNumberOfWorkDays());
+            baseSalary = baseSalary + (getSalaryInDay() * month.getNumberOfWorkDays());
         }
-        return salary + salary * 0.03 * getNumberOfSubordinates();
+        return baseSalary + baseSalary * 0.03 * getNumberOfSubordinates();
     }
 
     @Override
