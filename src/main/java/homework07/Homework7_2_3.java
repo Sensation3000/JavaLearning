@@ -54,5 +54,21 @@ public class Homework7_2_3 {
             System.out.println(" ");
             str += "  ";
         }
+
+        // вариант преподавателя
+        // все тоже самое, но вместо доп.переменной - цикл для создания пробелов
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("  ");
+            }
+
+            for (int j = 9 - i; j > 0; j--) {
+                System.out.print(j + " ");
+            }
+            for (int j = 0; j < 10 - i; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
     }
 }
