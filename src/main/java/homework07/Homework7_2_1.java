@@ -25,7 +25,7 @@ public class Homework7_2_1 {
                 System.out.print(j + " ");
                 //в каждой строчке пишем цифры + пробел
             }
-           System.out.println(" ");
+           System.out.println();
               //делаем перевод на следующую строчку
         }
     }
