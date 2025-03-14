@@ -39,11 +39,20 @@
     - [accumulator in multidimensional array](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson06/Lesson6_9.java)
     - [max and min in multidimensional array](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson06/Lesson6_10.java)
 * Lesson 7 - Functions, codewars
-  - [homework 7](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework07)
+    - [homework 7](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework07)
 * Lesson 8 - Classes, objects - instance fields and methods
-  - [homework 8](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework08)
+    - [homework 8](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework08)
 * Lesson 9 - Constructors, private, getters and setters, immutable classes
-  - [default and custome constructors, final and private, getters and setters, immutable class, static](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/lesson09)
-  - [homework9](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework09)
+    - [default and custome constructors, final and private, getters and setters, immutable class, static](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/lesson09)
+    - [homework9](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework09)
 * Lesson 10 - Inheritance, methods overload, methods override
-  - [Inheritance, overriding and overloading](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/lesson10)
+    - [Inheritance, overriding and overloading](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/lesson10)
+* Lesson 11 - Maven, Unit tests, TestNG
+    - [how we did before only using java](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson11/Lesson11.java)
+    - [unit tests without only maven](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson11/Lesson11_UnitTests.java)
+    - [unit test with TestNG](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson11/Lesson11_UnitTestsWithTestNG.java)
+* Lesson 12 - Abstract classes, packages
+* Lesson 13 - Selenium
+    - [first selenium tests](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/lesson13)
+* Lesson 14 - GIT, GitHub
+    - [GitHub Flow Branch Strategy, commands in git](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson14/git.md)
