@@ -1,4 +1,5 @@
 package lesson13;
+//подключаем новые зависимости - selenium и webdrivermanager
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
