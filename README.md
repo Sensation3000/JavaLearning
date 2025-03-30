@@ -67,3 +67,6 @@
     - [put something in map trough loop](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_08_Company.java)
     - [QUEUE](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_09.java)
     - [DEQUE](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_10.java)
+    - [homework16 task 1](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/Homework16_1)
+    - [homework16 task 2 and 3](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/Homework16_2)
+    - [homework16 task 4](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/Homework16_3)
