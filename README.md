@@ -56,3 +56,9 @@
     - [first selenium tests](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/lesson13)
 * Lesson 14 - GIT, GitHub
     - [GitHub Flow Branch Strategy, commands in git](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson14/git.md)
+* Lesson 16 - Standart collections
+    - [interface LIST and its implementations](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_1.java)
+    - [immutable and mutable lists](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_2.java)
+    - [list of lists](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_3.java)
+    - [ITERATOR](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_4.java)
+    - [our own custom iterator](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_5Random_Iterator.java)
