@@ -3,7 +3,7 @@ package lesson16;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Lesson16_9 {
+public class Lesson16_09 {
     public static void main(String[] args) {
 
         //QUEUE - очередь

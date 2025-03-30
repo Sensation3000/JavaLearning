@@ -5,7 +5,7 @@ import java.util.Random;
 
 // пишем свою собственную версию итератора
 
-public class Lesson16_5Random_Iterator implements Iterator {
+public class Lesson16_05Random_Iterator implements Iterator {
 
     private Random random = new Random();
     @Override
@@ -19,7 +19,7 @@ public class Lesson16_5Random_Iterator implements Iterator {
     }
 
     public static void main(String[] args) {
-       Iterator<Integer> iter = new Lesson16_5Random_Iterator();
+       Iterator<Integer> iter = new Lesson16_05Random_Iterator();
         System.out.println(iter.next());
         System.out.println(iter.next());
         System.out.println(iter.next());

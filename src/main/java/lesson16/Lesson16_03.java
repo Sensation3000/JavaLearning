@@ -2,7 +2,7 @@ package lesson16;
 
 import java.util.List;
 
-public class Lesson16_3 {
+public class Lesson16_03 {
     public static void main(String[] args) {
 
         // список списков

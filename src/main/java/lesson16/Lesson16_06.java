@@ -1,10 +1,9 @@
 package lesson16;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
-public class Lesson16_6 {
+public class Lesson16_06 {
     public static void main(String[] args) {
 
         // SET

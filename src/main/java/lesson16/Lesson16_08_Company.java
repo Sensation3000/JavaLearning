@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Lesson16_8_Company {
+public class Lesson16_08_Company {
     public static void main(String[] args) {
         List<Employee> employees = List.of(
                 new Employee("Dmitrii", "Atlanta"),

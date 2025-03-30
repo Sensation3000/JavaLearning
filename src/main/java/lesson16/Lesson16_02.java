@@ -3,7 +3,7 @@ package lesson16;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Lesson16_2 {
+public class Lesson16_02 {
     public static void main(String[] args) {
 
         System.out.println(filterByPrefix("a", List.of("aa", "ab", "bc", "cd", "ad"))); //["aa", "ab", "ad"]

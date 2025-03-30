@@ -3,7 +3,7 @@ package lesson16;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Lesson16_7 {
+public class Lesson16_07 {
 
     public static void main(String[] args) {
 

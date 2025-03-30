@@ -2,9 +2,8 @@ package lesson16;
 
 import java.util.Iterator;
 import java.util.List;
-import java.util.Random;
 
-public class Lesson16_4 {
+public class Lesson16_04 {
 
     public static void main(String[] args) {
 
