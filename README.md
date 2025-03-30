@@ -56,3 +56,14 @@
     - [first selenium tests](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/lesson13)
 * Lesson 14 - GIT, GitHub
     - [GitHub Flow Branch Strategy, commands in git](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson14/git.md)
+* Lesson 16 - Standard collections
+    - [interface LIST and its implementations](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_01.java)
+    - [immutable and mutable lists](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_02.java)
+    - [list of lists](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_03.java)
+    - [ITERATOR](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_04.java)
+    - [our own custom iterator](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_05Random_Iterator.java)
+    - [SET, immutable and mutable set](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_06.java)
+    - [MAP](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_07.java)
+    - [put something in map trough loop](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_08_Company.java)
+    - [QUEUE](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_09.java)
+    - [DEQUE](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_10.java)
