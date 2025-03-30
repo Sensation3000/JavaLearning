@@ -3,7 +3,7 @@ package lesson16;
 import java.util.Iterator;
 import java.util.Random;
 
-//пишем свою собственную версию итератора
+// пишем свою собственную версию итератора
 
 public class Lesson16_5Random_Iterator implements Iterator {
 

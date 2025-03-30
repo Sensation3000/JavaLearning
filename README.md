@@ -62,3 +62,5 @@
     - [list of lists](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_3.java)
     - [ITERATOR](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_4.java)
     - [our own custom iterator](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_5Random_Iterator.java)
+    - [SET, immutable and mutable set](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_6.java)
+    - [MAP](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_7.java)

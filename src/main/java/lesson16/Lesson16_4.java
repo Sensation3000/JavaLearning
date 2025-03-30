@@ -20,6 +20,8 @@ public class Lesson16_4 {
             String elem = iter.next();
             System.out.println(elem);
         }
+        // итератор это такая штука по которой можно пройти один раз,
+        // его нельзя отмотать назад
 
         for(String s : l1){
             //тут под капотом цикл с итератором
