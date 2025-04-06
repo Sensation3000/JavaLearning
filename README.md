@@ -68,3 +68,8 @@
     - [QUEUE](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_09.java)
     - [DEQUE](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_10.java)
     - [homework16](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework16)
+* Lesson 19 - Selenium wait
+    - [implicit, Explicit, Fluent waits](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/lesson19/Waiters.java)
+    - [jenkins tests](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/lesson19/JenkinsTest.java)
+    - [lazy loading design pattern in BaseTest](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/lesson19/BaseTest.java)
+    - [goToHomeMethod in TestUtils](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/lesson19/TestUtils.java)
