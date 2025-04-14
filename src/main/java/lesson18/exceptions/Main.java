@@ -67,19 +67,25 @@ public class Main {
 
         System.out.println("=============Exceptions2===========");
         // System.out.println(divide(10,5));
-        //если в методе не было предусмотрено, что делать с ошибкой, то управление передается выше
+        // если в методе не было предусмотрено, что делать с ошибкой, то управление передается выше
         // в данном случае должны положить вызов метода  divide try and catch
 
         try {
-            System.out.println(divide(10,5));
+            System.out.println(divide(10, 5));
         } catch (ZeroException e) {
             System.out.println("Cannot divide by zero, try again");
+        } finally {
+            // будет выполненно всегда
+            // нужно для контроля за ресурсами, закрываем connection
+            System.out.println("this will always execute");
         }
 
         try {
-            System.out.println(divide(10,0));
+            System.out.println(divide(10, 0));
         } catch (ZeroException e) {
             System.out.println("Cannot divide by zero, try again");
+        } finally {
+            System.out.println("this will always execute");
         }
     }
 
@@ -87,12 +93,12 @@ public class Main {
     //раньше все ошибки были Checked, их обязаны были объявлять в методе и соответственно писать на них обработчики ошибок
     //RunTime - не обязательно писать обработчики
 
-    public static int divide (int a, int b) throws ZeroException {
+    public static int divide(int a, int b) throws ZeroException {
         if (b == 0) throw new ZeroException();
-        return a/b;
+        return a / b;
     }
 }
 
-class ZeroException extends Exception{
+class ZeroException extends Exception {
     //это Checked Exception
 }
