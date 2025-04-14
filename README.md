@@ -48,7 +48,7 @@
 * Lesson 10 - Inheritance, methods overload, methods override
     - [Inheritance, overriding and overloading](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/lesson10)
 * Lesson 11 - Maven, Unit tests, TestNG
-    - [how we did before only using java](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson11/Lesson11.java)
+    - [how we did before, only using java](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson11/Lesson11.java)
     - [unit tests without only maven](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson11/Lesson11_UnitTests.java)
     - [unit test with TestNG](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson11/Lesson11_UnitTestsWithTestNG.java)
 * Lesson 12 - Abstract classes, packages
@@ -68,6 +68,10 @@
     - [QUEUE](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_09.java)
     - [DEQUE](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson16/Lesson16_10.java)
     - [homework16](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework16)
+* Lesson 18 - Exceptions. Interfaces
+    - [exceptions](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/lesson18/exceptions)
+    - [nterfaces](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/lesson18/interfaces)
+    - [unit tests using interfaces](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson18/interfaces/OrderServiceTest.java)
 * Lesson 19 - Selenium wait
     - [implicit, Explicit, Fluent waits](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/lesson19/Waiters.java)
     - [jenkins tests](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/lesson19/JenkinsTest.java)
