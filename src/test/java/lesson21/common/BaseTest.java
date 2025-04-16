@@ -1,76 +1,113 @@
 package lesson21.common;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import lesson21.common.order.OrderForTests;
+import lesson21.common.order.OrderUtils;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
+import org.testng.annotations.*;
 
-import java.io.File;
-import java.io.IOException;
 import java.lang.reflect.Method;
-import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
 import java.time.Duration;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
-@Listeners(FilterForTests.class)
-// ставим listener, чтобы отслеживать только измененные классы и запускать только их
+@Listeners({FilterForTests.class, OrderForTests.class})
+// ставим listener FilterForTests, чтобы отслеживать только измененные классы и запускать только их
 // нужно, чтобы CI ранился только для них, а не для всех тестов в  проекте
-
 //если изменится какой-то класс, который не является тестовым, то CI запуститься на все тесты
 
+// на 23 уроке поставили также  listener OrderForTests для того, чтобы наши тесты сортировались
+// и правильно запускались связанные тесты
+
 public abstract class BaseTest {
+
+    private WebDriver driver;
 
     private WebDriverWait wait5;
     private WebDriverWait wait10;
 
-    private WebDriver driver;
+    private OrderUtils.MethodsOrder<Method> methodsOrder;
+
+    private void startDriver() {
+        ProjectUtils.log("Browser open");
+        driver = ProjectUtils.createDriver();
+    }
+
+    private void clearData() {
+        ProjectUtils.log("Clear data");
+        JenkinsUtils.clearData();
+    }
+
+    private void loginWeb() {
+        ProjectUtils.log("Login");
+        JenkinsUtils.login(getDriver());
+    }
+
+    private void getWeb() {
+        ProjectUtils.log("Get web page");
+        ProjectUtils.get(getDriver());
+    }
+
+    private void stopDriver() {
+        try {
+            JenkinsUtils.logout(getDriver());
+        } catch (Exception ignore) {
+        }
+
+        closeDriver();
+    }
+
+    private void closeDriver() {
+        if (driver != null) {
+            driver.quit();
+
+            driver = null;
+            wait5 = null;
+            wait10 = null;
+
+            ProjectUtils.log("Browser closed");
+        }
+    }
+
+    @BeforeClass
+    protected void beforeClass() {
+        methodsOrder = OrderUtils.createMethodsOrder(
+                Arrays.stream(this.getClass().getMethods())
+                        .filter(m -> m.getAnnotation(Test.class) != null && m.getAnnotation(Ignore.class) == null)
+                        .collect(Collectors.toList()),
+                m -> m.getName(),
+                m -> m.getAnnotation(Test.class).dependsOnMethods());
+    }
 
     @BeforeMethod
     protected void beforeMethod(Method method) {
         ProjectUtils.logf("Run %s.%s", this.getClass().getName(), method.getName());
-
-        JenkinsUtils.clearData();
-
-        driver = ProjectUtils.createDriver();
-        ProjectUtils.get(driver);
-        JenkinsUtils.login(driver);
-
-        getWait10().until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".empty-state-block h1")));
+        try {
+            if (!methodsOrder.isGroupStarted(method) || methodsOrder.isGroupFinished(method)) {
+                clearData();
+                startDriver();
+                getWeb();
+                loginWeb();
+            } else {
+                getWeb();
+            }
+        } catch (Exception e) {
+            closeDriver();
+            throw new RuntimeException(e);
+        } finally {
+            methodsOrder.markAsInvoked(method);
+        }
     }
 
     @AfterMethod
     protected void afterMethod(Method method, ITestResult testResult) {
-        if (!testResult.isSuccess()) {
-            try {
-                File screenshotDir = new File("screenshots");
-                if (!screenshotDir.exists() && !screenshotDir.mkdirs()) {
-                    throw new RuntimeException("Failed to create a folder for screenshots");
-                }
-                File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
-                String className = testResult.getTestClass().getRealClass().getSimpleName();
-                String testName = testResult.getMethod().getMethodName();
-                String fileName = className + "." + testName + ".png";
-
-                File destination = new File(screenshotDir, fileName);
-                Files.copy(screenshot.toPath(), destination.toPath(), StandardCopyOption.REPLACE_EXISTING);
-
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+        if (!testResult.isSuccess() && ProjectUtils.isRunCI()) {
+            ProjectUtils.takeScreenshot(getDriver(), testResult.getTestClass().getRealClass().getSimpleName(), testResult.getName());
         }
 
-        if (ProjectUtils.isRunCI() || testResult.isSuccess() || ProjectUtils.closeIfError()) {
-            JenkinsUtils.logout(driver);
-            driver.quit();
-            wait5 = null;
-            wait10 = null;
+        if (methodsOrder.isGroupFinished(method) && (ProjectUtils.isRunCI() || testResult.isSuccess() || ProjectUtils.closeIfError())) {
+            stopDriver();
         }
 
         ProjectUtils.logf("Execution time is %.3f sec", (testResult.getEndMillis() - testResult.getStartMillis()) / 1000.0);
