@@ -85,3 +85,9 @@
       - [JenkinsUtils](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson21/common/JenkinsUtils.java)
       - [TestUtils](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson21/common/TestUtils.java)
     - [WelcomePageTest](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson21/WelcomePageTest.java)
+* Lesson 23 - DependsOnMethods, POM
+      - [packege Order](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/lesson21/common/order)
+      - [changes in BaseTest](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson21/common/BaseTest.java)
+      - [examples of dependsOnMethods Tests](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson23/FreestyleProjectTest.java)
+* [JENKINS TESTS](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/jenkins)
+* [CODEWARS](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/codewars)
