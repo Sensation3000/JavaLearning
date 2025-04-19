@@ -98,10 +98,3 @@
       - [another example of POM test](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson23/CreateNewPipelineTest.java)
 * [JENKINS TESTS](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/jenkins)
 * [CODEWARS](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/codewars)
-
-
-
-
-
-
-
