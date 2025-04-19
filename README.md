@@ -91,17 +91,10 @@
       - [changes in BaseTest](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/common/BaseTest.java)
       - [examples of dependsOnMethods Tests](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson23/FreestyleProjectTest.java)
     - POM
-      - [HomePage](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/pages/HomePage.java)
+      - [HomePage](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/page/HomePage.java)
       - [abstract class BasePage](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/common/BasePage.java)
-      - [usual pages](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/pages)
+      - [usual pages](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/page)
       - [examples of POM tests](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson23/AddDescriptionButtonTest.java)
       - [another example of POM test](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson23/CreateNewPipelineTest.java)
 * [JENKINS TESTS](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/jenkins)
 * [CODEWARS](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/codewars)
-
-
-
-
-
-
-
