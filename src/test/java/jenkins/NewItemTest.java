@@ -1,7 +1,7 @@
 package jenkins;
 
 import jenkins.testData.TestDataProvider;
-import lesson21.common.BaseTest;
+import jenkins.common.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NewItemTest extends BaseTest {
+public class NewItemTest extends BaseTest{
 
     @Test
     public void testCheckItemsTypes() {

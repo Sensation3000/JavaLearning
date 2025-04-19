@@ -1,7 +1,7 @@
-package lesson21.common;
+package jenkins.common;
 
-import lesson21.common.order.OrderForTests;
-import lesson21.common.order.OrderUtils;
+import jenkins.common.order.OrderForTests;
+import jenkins.common.order.OrderUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;

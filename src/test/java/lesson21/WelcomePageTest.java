@@ -1,5 +1,5 @@
 package lesson21;
-import lesson21.common.BaseTest;
+import jenkins.common.BaseTest;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;

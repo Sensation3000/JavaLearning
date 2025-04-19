@@ -1,4 +1,4 @@
-package lesson21.common.order;
+package jenkins.common.order;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

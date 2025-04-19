@@ -79,15 +79,29 @@
     - [goToHomeMethod in TestUtils](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/lesson19/TestUtils.java)
 * Lesson 21 - TestNG Listeners
     - Common classes in practice project: 
-      - [BaseTest](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson21/common/BaseTest.java)
-      - [FilterForTests](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson21/common/FilterForTests.java)
-      - [ProjectUtils](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson21/common/ProjectUtils.java)
-      - [JenkinsUtils](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson21/common/JenkinsUtils.java)
-      - [TestUtils](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson21/common/TestUtils.java)
-    - [WelcomePageTest](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson21/WelcomePageTest.java)
+      - [BaseTest](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/common/BaseTest.java)
+      - [FilterForTests](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/common/FilterForTests.java)
+      - [ProjectUtils](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/common/ProjectUtils.java)
+      - [JenkinsUtils](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/common/JenkinsUtils.java)
+      - [TestUtils](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/common/TestUtils.java)
+    - [WelcomePageTest](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/WelcomePageTest.java)
 * Lesson 23 - DependsOnMethods, POM
-      - [packege Order](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/lesson21/common/order)
-      - [changes in BaseTest](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson21/common/BaseTest.java)
+    - DependsOnMethods:
+      - [package Order](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/jenkins/common/order)
+      - [changes in BaseTest](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/common/BaseTest.java)
       - [examples of dependsOnMethods Tests](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson23/FreestyleProjectTest.java)
+    - POM
+      - [HomePage]((https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/pages/HomePage.java))
+      - [abstract class BasePage](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/common/BasePage.java)
+      - [usual pages](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/pages)
+      - [examples of POM tests](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson23/AddDescriptionButtonTest.java)
+      - [another example of POM test](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson23/CreateNewPipelineTest.java)
 * [JENKINS TESTS](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/jenkins)
 * [CODEWARS](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/codewars)
+
+
+
+
+
+
+

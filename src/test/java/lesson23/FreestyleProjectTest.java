@@ -1,7 +1,7 @@
 package lesson23;
 
-import lesson21.common.BaseTest;
-import lesson21.common.TestUtils;
+import jenkins.common.BaseTest;
+import jenkins.common.TestUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
