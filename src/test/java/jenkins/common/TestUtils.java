@@ -1,4 +1,4 @@
-package lesson21.common;
+package jenkins.common;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

@@ -1,4 +1,4 @@
-package lesson21.common.order;
+package jenkins.common.order;
 
 import java.util.*;
 import java.util.function.Function;
