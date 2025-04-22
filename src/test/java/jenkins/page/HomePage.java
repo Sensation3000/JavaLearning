@@ -3,6 +3,7 @@ package jenkins.page;
 import jenkins.common.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class HomePage extends BasePage {
 
@@ -44,6 +45,12 @@ public class HomePage extends BasePage {
 
     public NewItemPage createJob() {
         getDriver().findElement(By.xpath("//span[text()='Create a job']")).click();
+
+        return new NewItemPage(getDriver());
+    }
+
+    public NewItemPage clickNewItemOnLeftSidePanel() {
+        getWait10().until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='New Item']/ancestor::span[@class='task-link-wrapper ']"))).click();
 
         return new NewItemPage(getDriver());
     }
