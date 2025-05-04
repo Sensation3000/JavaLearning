@@ -39,4 +39,17 @@ public class NewItemPage extends BasePage {
     public String getItemTypeText(String itemType){
         return getDriver().findElement(By.xpath("//span[text()='" + itemType + "']")).getText();
     }
+
+    public NewItemPage selectFreestyle() {
+        getDriver().findElement(By.cssSelector(".hudson_model_FreeStyleProject")).click();
+
+        return this;
+    }
+
+    public FreestyleConfigurationPage selectFreestyleAndClickOk() {
+        selectFreestyle();
+        getDriver().findElement(By.id("ok-button")).click();
+
+        return new FreestyleConfigurationPage(getDriver());
+    }
 }

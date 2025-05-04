@@ -3,7 +3,12 @@ package jenkins.page;
 import jenkins.common.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.util.List;
 
 public class HomePage extends BasePage {
 
@@ -14,9 +19,13 @@ public class HomePage extends BasePage {
 //    }
 //    т.к наследуемся от базовой страницы нам уже не нужно использовать свое поле, мы наследуемся
 
+    @FindBy(id = "main-panel")
+    private WebElement mainPanel;
 
     public HomePage(WebDriver driver) {
         super(driver);
+
+        PageFactory.initElements(driver,this);
     }
 
     public HomePage clickAddDescriptionButton() {
@@ -53,5 +62,25 @@ public class HomePage extends BasePage {
         getWait10().until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='New Item']/ancestor::span[@class='task-link-wrapper ']"))).click();
 
         return new NewItemPage(getDriver());
+    }
+
+    public boolean isJobListEmpty(){
+        return mainPanel.getText().contains("Welcome to Jenkins");
+    }
+
+    public FreestyleProjectPage clickFreestyleProjectOnDashboard(String projectName) {
+        getWait5().until(ExpectedConditions.visibilityOf(getDriver().findElement(
+                        By.xpath("//a[@class='jenkins-table__link model-link inside']/span[text()='%s']".formatted(projectName)))))
+                .click();
+
+        return new FreestyleProjectPage(getDriver());
+    }
+
+    public List<String> getProjectNameList() {
+        if (isJobListEmpty()) {
+            return List.of();
+        }
+        return getDriver().findElements(By.cssSelector(".jenkins-table__link > span:nth-child(1)")).stream()
+                .map(WebElement::getText).toList();
     }
 }
