@@ -93,9 +93,12 @@
     - POM
       - [HomePage](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/page/HomePage.java)
       - [abstract class BasePage](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/common/BasePage.java)
+      - [abstract class BaseModel](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/common/BaseModel.java)
       - [usual pages](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/jenkins/page)
       - [examples of POM tests](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson23/AddDescriptionButtonTest.java)
       - [another example of POM test](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson23/CreateNewPipelineTest.java)
+* Lesson 27 - Refactoring and FindBy
+  - [findBy on any page](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson27/FindByOnAnyPage.java)
+  - [refactor some tests using POM, dependsOnMethods and findBy](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson27/FreestyleProjectTest.java)
 * [JENKINS TESTS](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/jenkins)
 * [CODEWARS](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/codewars)
--
