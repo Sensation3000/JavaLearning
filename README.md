@@ -38,6 +38,7 @@
     - [use of array\[0\]](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson06/Lesson6_8.java)
     - [accumulator in multidimensional array](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson06/Lesson6_9.java)
     - [max and min in multidimensional array](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson06/Lesson6_10.java)
+    - [homework 6](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework06)
 * Lesson 7 - Functions, codewars
     - [homework 7](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework07)
 * Lesson 8 - Classes, objects - instance fields and methods
@@ -70,7 +71,7 @@
     - [homework16](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework16)
 * Lesson 18 - Exceptions. Interfaces
     - [exceptions](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/lesson18/exceptions)
-    - [nterfaces](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/lesson18/interfaces)
+    - [interfaces](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/lesson18/interfaces)
     - [unit tests using interfaces](https://github.com/Sensation3000/JavaLearning/blob/main/src/test/java/lesson18/interfaces/OrderServiceTest.java)
 * Lesson 19 - Selenium wait
     - [implicit, Explicit, Fluent waits](https://github.com/Sensation3000/JavaLearning/tree/main/src/test/java/lesson19/Waiters.java)
