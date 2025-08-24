@@ -23,10 +23,22 @@ public class Homework7_2_2 {
                 System.out.print(j + " ");
                 //внутри строчек пишем начиная с 0 до 10-i
             }
-            System.out.println(" ");
+            System.out.println();
             //делаем перевод на следующую строчку после каждой итерации
             str += "  ";
             //добавляем пробелы после каждой итерации
+        }
+
+        //вариант преподавателя без доп.переменной, но с циклом, который перечает пробелы
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("  ");
+            }
+
+            for (int j = 0; j < 10 - i; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
         }
     }
 }
