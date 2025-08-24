@@ -13,7 +13,6 @@ public class Homework7_1_4 {
             sum += array[i];
         }
         double average = sum * 1.0 / array.length;
-        System.out.println(sum);
         System.out.println(average);
     }
 }
