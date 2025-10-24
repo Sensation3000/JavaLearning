@@ -40,8 +40,16 @@
     - [max and min in multidimensional array](https://github.com/Sensation3000/JavaLearning/blob/main/src/main/java/lesson06/Lesson6_10.java)
     - [homework 6](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework06)
 * Lesson 7 - Functions, codewars
+    - About functions
+    - Add parameters
+    - Function with parameters and return
     - [homework 7](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework07)
 * Lesson 8 - Classes, objects - instance fields and methods
+    - Why do we need classes, what it looks like when there is no class yet
+    - Making class and using static method where we pass an object of this class
+    - Transfer behavior inside class and it becomes method of instance. 
+    - About static methods and fields
+    - Why we need behavior/methods of instance
     - [homework 8](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/homework08)
 * Lesson 9 - Constructors, private, getters and setters, immutable classes
     - [default and custome constructors, final and private, getters and setters, immutable class, static](https://github.com/Sensation3000/JavaLearning/tree/main/src/main/java/lesson09)
